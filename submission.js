@@ -1,5 +1,6 @@
 //question 1 
-function findSum(numbers) {
+const findSum
+const findSum = function(array) {
   let total = 0;
   for (let i = 0; i < numbers.length; i++) {
       total += numbers[i];
@@ -9,7 +10,7 @@ function findSum(numbers) {
 console.log(findSum([2,4,6]));
 
 //question 2
-function findFrequency(data) {
+const findFrequency = function(array) {
   let result = {
       most: '',
       least: ''
@@ -35,7 +36,7 @@ function findFrequency(data) {
 console.log(findFrequency(['a', 'b', 'c', 'a', 'b', 'c', 'a', 'a', 'd']));
 
 // question 3
-function isPalindrome(str) {  
+const isPalindrome = function (str) {  
       
   const length = string.length;  
 
@@ -57,7 +58,7 @@ const value = isPalindrome(string);
 console.log(value);
 
 // //question 4
-function largestPair(arr) {
+const largestPair = function(array) {
   var max=-Infinity;  
   for (var i=0;i<arr.length-1;i++){
       max = arr[i]*arr[i+1]>max ?arr[i]*arr[i+1]:max;  
@@ -67,7 +68,7 @@ function largestPair(arr) {
 console.log(largestPair([5, 1, 2, 3, 1, 4]));
 
 // question 5
-function removeParenth(){
+const removeParenth = function(str)  {
   var phrase = (prompt('Im (not) havingfun ')) 
   var result = "" 
   for(var i = 0; i < phrase.length;i++){
@@ -78,7 +79,7 @@ function removeParenth(){
 } 
 
 // question 6
-function scoreScrabble(){
+const scoreScrabble = function(str) {
   let sum=0 
   temp=String(prompt('Quiz'))  
   let score={   
@@ -99,3 +100,4 @@ function scoreScrabble(){
  }
   console.log(sum);  //??????
 }
+
