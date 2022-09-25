@@ -1,5 +1,4 @@
 //question 1 
-const findSum
 const findSum = function(array) {
   let total = 0;
   for (let i = 0; i < numbers.length; i++) {
