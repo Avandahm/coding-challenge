@@ -1,12 +1,14 @@
 //question 1 
-const findSum = function(array) {
+const findSum = function(array) {   
+  var numbers = [0, 234, 356, 5, 3, 1, 3, 4];
   let total = 0;
   for (let i = 0; i < numbers.length; i++) {
       total += numbers[i];
   }
   return total;
 }
-console.log(findSum([2,4,6]));
+var sum = findSum ();
+console.log(sum);
 
 //question 2
 const findFrequency = function(array) {
@@ -21,12 +23,12 @@ const findFrequency = function(array) {
           if (data[i] === data[j])
               ++count;
       }
-      if (count > best_count) {
-          best_count = count;
+      if (count > bestCount) {
+          bestCount = count;
           result.most = data[i];
       }
-      if (count < least_count) {
-          least_count = count;
+      if (count < leastCount) {
+          leastCount = count;
           result.least = data[i];
       }
   }
@@ -34,7 +36,7 @@ const findFrequency = function(array) {
 }
 console.log(findFrequency(['a', 'b', 'c', 'a', 'b', 'c', 'a', 'a', 'd']));
 
-// question 3
+// // question 3
 const isPalindrome = function (str) {  
       
   const length = string.length;  
@@ -56,7 +58,7 @@ const value = isPalindrome(string);
 
 console.log(value);
 
-// //question 4
+ //question 4
 const largestPair = function(array) {
   var max=-Infinity;  
   for (var i=0;i<arr.length-1;i++){
@@ -77,7 +79,7 @@ const removeParenth = function(str)  {
   return result 
 } 
 
-// question 6
+// // question 6
 const scoreScrabble = function(str) {
   let sum=0 
   temp=String(prompt('Quiz'))  
