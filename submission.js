@@ -39,28 +39,21 @@ var frequency = findFrequency ();
 console.log(frequency);
 
 // // question 3
-const isPalindrome = function(str) {  
-      
-   
-  const length = string.length;  
+const isPalindrome = function(str) {
+  var re = /[^A-Za-z0-9]/g;
+  str = str.toLowerCase().replace(re, '');
+  var len = str.length;
+  for (var i = 0; i < len/2; i++) {
+    if (str[i] !== str[len - 1 - i]) {
+        return false;
+    }
+  }
+  return true;
+ }
 
-    
-  for (let i = 0; i < length / 2; i++) {  
+var palindrome = isPalindrome ('race car');
+console.log(palindrome);
 
-      
-      if (string[i] !== string[length - 1 - i]) {  
-          alert( 'False');  
-      }  
-  }  
-  alert( 'True');  
-}  
-
-
-const string = prompt('Enter a string ');  
-
-const value = isPalindrome(string);  
-
-console.log(value);
 //question 4
 const largestPair = function(array) {
   var arr= [9, 5, 10, 2, 24, -1, -48];
@@ -76,7 +69,7 @@ console.log(pair);
 // question 5
 const removeParenth = function(str){
   var s=  ('Im (not) havingfun') 
-  var result="" 
+  var result=" " 
   for(var i=0;i<s.length;i++){ 
     if(!(s[i]==='(' || s[i]===')')) 
    result+=s[i] 
