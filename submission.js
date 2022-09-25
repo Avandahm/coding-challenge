@@ -39,13 +39,15 @@ var frequency = findFrequency ();
 console.log(frequency);
 
 // // question 3
-const isPalindrome = function (str) {  
+const isPalindrome = function(str) {  
       
+   
   const length = string.length;  
 
     
   for (let i = 0; i < length / 2; i++) {  
 
+      
       if (string[i] !== string[length - 1 - i]) {  
           alert( 'False');  
       }  
@@ -54,13 +56,12 @@ const isPalindrome = function (str) {
 }  
 
 
-const string = ('racecar');  
+const string = prompt('Enter a string ');  
 
 const value = isPalindrome(string);  
 
 console.log(value);
-
- //question 4
+//question 4
 const largestPair = function(array) {
   var arr= [9, 5, 10, 2, 24, -1, -48];
   var max=-Infinity;  
@@ -73,23 +74,23 @@ var pair = largestPair();
 console.log(pair);
 
 // question 5
-const removeParenth = function(str)  {
-  var phrase = ('Im (not) havingfun '); 
-  var result = "" 
-  for(var i = 0; i < phrase.length;i++){
-    if(! ( phrase[i] === '(' || phrase[i] ===')')) 
-   result += phrase [i] 
+const removeParenth = function(str){
+  var s=  ('Im (not) havingfun') 
+  var result="" 
+  for(var i=0;i<s.length;i++){ 
+    if(!(s[i]==='(' || s[i]===')')) 
+   result+=s[i] 
   }
   return result 
-} 
-var sentence = removeParenth();
-console.log(sentence);
+}
+var phrase = removeParenth();
+console.log(phrase);
 
 // // question 6
-const scoreScrabble = function(str) {
+const scoreScrabble = function(str){
   let sum=0 
-  temp=String(prompt('Quiz'))  
-  let score={   
+  temp=String(prompt('Enter a word : '))  
+  let s={   
       1 : ['a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't'],
       2: ['d', 'g'],
       3 :[ 'b', 'c', 'm', 'p'],
@@ -98,13 +99,17 @@ const scoreScrabble = function(str) {
       8 : ['j', 'x'],
       10 : ['q', 'z'],
   }
-  let list=Object.entries(score)  
+  let list=Object.entries(s)  
  for(let i in temp){  
    for(let j in list){ 
      if(list[j][1].includes(temp[i])){  
+       sum+=Number(list[j][0])  
      }
    }
  }
-  console.log(sum);  //??????
+  return sum  
 }
+var answer = scoreScrabble()
+console.log(answer);
+
 
