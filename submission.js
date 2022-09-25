@@ -12,11 +12,12 @@ console.log(sum);
 
 //question 2
 const findFrequency = function(array) {
+  var data = ['a', 'b', 'c', 'a', 'b', 'c', 'a', 'a', 'd'];
   let result = {
       most: '',
       least: ''
   };
-  let best_count = 0, least_count = data.length;
+  let bestCount = 0, leastCount = data.length;
   for (let i = 0; i < data.length; i++) {
       let count = 0;
       for (let j = 0; j < data.length; j++) {
@@ -34,7 +35,8 @@ const findFrequency = function(array) {
   }
   return result;
 }
-console.log(findFrequency(['a', 'b', 'c', 'a', 'b', 'c', 'a', 'a', 'd']));
+var frequency = findFrequency ();
+console.log(frequency);
 
 // // question 3
 const isPalindrome = function (str) {  
@@ -60,24 +62,28 @@ console.log(value);
 
  //question 4
 const largestPair = function(array) {
+  var arr= [9, 5, 10, 2, 24, -1, -48];
   var max=-Infinity;  
   for (var i=0;i<arr.length-1;i++){
       max = arr[i]*arr[i+1]>max ?arr[i]*arr[i+1]:max;  
   }
   return max;
 }
-console.log(largestPair([5, 1, 2, 3, 1, 4]));
+var pair = largestPair();
+console.log(pair);
 
 // question 5
 const removeParenth = function(str)  {
-  var phrase = (prompt('Im (not) havingfun ')) 
+  var phrase = ('Im (not) havingfun '); 
   var result = "" 
   for(var i = 0; i < phrase.length;i++){
-    if(! ( s[i] === '(' || s[i] ===')')) 
+    if(! ( phrase[i] === '(' || phrase[i] ===')')) 
    result += phrase [i] 
   }
   return result 
 } 
+var sentence = removeParenth();
+console.log(sentence);
 
 // // question 6
 const scoreScrabble = function(str) {
