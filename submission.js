@@ -102,7 +102,8 @@ const scoreScrabble = function(str){
  }
   return sum  
 }
-var answer = scoreScrabble()
-console.log(answer);
+var score = scoreScrabble();
+
+console.log(score);
 
 
