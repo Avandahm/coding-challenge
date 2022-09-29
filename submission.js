@@ -7,8 +7,7 @@ const findSum = function(array) {
   }
   return total;
 }
-var sum = findSum ();
-console.log(sum);
+
 
 //question 2
 const findFrequency = function(array) {
@@ -35,8 +34,7 @@ const findFrequency = function(array) {
   }
   return result;
 }
-var frequency = findFrequency ();
-console.log(frequency);
+
 
 // // question 3
 const isPalindrome = function(str) {
@@ -51,8 +49,6 @@ const isPalindrome = function(str) {
   return true;
  }
 
-var palindrome = isPalindrome ('race ca');
-console.log(palindrome);
 
 //question 4
 const largestPair = function(array) {
@@ -63,8 +59,7 @@ const largestPair = function(array) {
   }
   return max;
 }
-var pair = largestPair();
-console.log(pair);
+
 
 // question 5
 const removeParenth = function(str){
@@ -76,8 +71,6 @@ const removeParenth = function(str){
   }
   return result 
 }
-var phrase = removeParenth();
-console.log(phrase);
 
 // // question 6
 const scoreScrabble = function(str){
@@ -102,8 +95,6 @@ const scoreScrabble = function(str){
  }
   return sum  
 }
-var score = scoreScrabble();
 
-console.log(score);
 
 
