@@ -61,13 +61,10 @@ const largestPair = function(array) {
 
 
 const removeParenth = function(str){
-  var s=  ('Im (not) havingfun') 
-  var result=" " 
-  for(var i=0;i<s.length;i++){ 
-    if(!(s[i]==='(' || s[i]===')')) 
-   result+=s[i] 
-  }
-  return result 
+  var phrase=  ('Im(not)havingfun') 
+  phrase = phrase.replace('(not)','');
+  
+  return phrase 
 }
 
 
