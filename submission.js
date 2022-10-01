@@ -1,5 +1,6 @@
-const findSum = function(array) {   
-  var numbers = [0, 234, 356, 5, 3, 1, 3, 4];
+//question 1 
+const findSum = function(array) { 
+  var numbers = [10, 234, 356, 5, 3, 1, 3, 4];
   let total = 0;
   for (let i = 0; i < numbers.length; i++) {
       total += numbers[i];
@@ -7,9 +8,9 @@ const findSum = function(array) {
   return total;
 }
 
-
+//question 2
 const findFrequency = function(array) {
-  var data = ['a', 'b', 'c', 'a', 'b', 'c', 'a', 'a', 'd'];
+  var data = ['a', 'a', 'b', 'b', 'c', 'd', 'd', 'd'];
   let result = {
       most: '',
       least: ''
@@ -34,7 +35,7 @@ const findFrequency = function(array) {
 }
 
 
-
+// // question 3
 const isPalindrome = function(str) {
   var re = /[^A-Za-z0-9]/g;
   str = str.toLowerCase().replace(re, '');
@@ -48,9 +49,9 @@ const isPalindrome = function(str) {
  }
 
 
-
+//question 4
 const largestPair = function(array) {
-  var arr= [9, 5, 10, 2, 24, -1, -48];
+  var arr= [1,3,5,8];
   var max=-Infinity;  
   for (var i=0;i<arr.length-1;i++){
       max = arr[i]*arr[i+1]>max ?arr[i]*arr[i+1]:max;  
@@ -59,18 +60,18 @@ const largestPair = function(array) {
 }
 
 
-
+// question 5
 const removeParenth = function(str){
-  var phrase=  ('Im(not)havingfun') 
+  var phrase=  ('codingis(not)fun') 
   phrase = phrase.replace('(not)','');
   
   return phrase 
 }
 
-
+// // question 6
 const scoreScrabble = function(str){
   let sum=0 
-  temp=String('quiz');
+  temp=String('quintessential');
   let s={   
       1 : ['a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't'],
       2: ['d', 'g'],
