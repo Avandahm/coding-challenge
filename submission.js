@@ -1,39 +1,38 @@
 //question 1 
 const findSum = function(array) { 
-  var numbers = [10, 234, 356, 5, 3, 1, 3, 4];
+  array = [10, 234, 356, 5, 3, 1, 3, 4];
   let total = 0;
-  for (let i = 0; i < numbers.length; i++) {
-      total += numbers[i];
+  for (let i = 0; i < array.length; i++) {
+      total += array[i];
   }
   return total;
 }
 
 //question 2
 const findFrequency = function(array) {
-  var data = ['a', 'a', 'b', 'b', 'c', 'd', 'd', 'd'];
+  array = ['a', 'a', 'b', 'b', 'c', 'd', 'd', 'd'];
   let result = {
       most: '',
       least: ''
   };
-  let bestCount = 0, leastCount = data.length;
-  for (let i = 0; i < data.length; i++) {
+  let bestCount = 0, leastCount = array.length;
+  for (let i = 0; i < array.length; i++) {
       let count = 0;
-      for (let j = 0; j < data.length; j++) {
-          if (data[i] === data[j])
+      for (let j = 0; j < array.length; j++) {
+          if (array[i] === array[j])
               ++count;
       }
       if (count > bestCount) {
           bestCount = count;
-          result.most = data[i];
+          result.most = array[i];
       }
       if (count < leastCount) {
           leastCount = count;
-          result.least = data[i];
+          result.least = array[i];
       }
   }
   return result;
 }
-
 
 // // question 3
 const isPalindrome = function(str) {
@@ -51,27 +50,26 @@ const isPalindrome = function(str) {
 
 //question 4
 const largestPair = function(array) {
-  var arr= [1,3,5,8];
+  array= [1,3,5,8];
   var max=-Infinity;  
-  for (var i=0;i<arr.length-1;i++){
-      max = arr[i]*arr[i+1]>max ?arr[i]*arr[i+1]:max;  
+  for (var i=0;i<array.length-1;i++){
+      max = array[i]*array[i+1]>max ?array[i]*array[i+1]:max;  
   }
   return max;
 }
 
-
 // question 5
 const removeParenth = function(str){
-  var phrase=  ('codingis(not)fun') 
-  phrase = phrase.replace('(not)','');
+  str=  ('codingis(not)fun') 
+  str = str.replace('(not)','');
   
-  return phrase 
+  return str
 }
 
 // // question 6
 const scoreScrabble = function(str){
   let sum=0 
-  temp=String('quintessential');
+  str = ('quintessential');
   let s={   
       1 : ['a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't'],
       2: ['d', 'g'],
@@ -82,15 +80,14 @@ const scoreScrabble = function(str){
       10 : ['q', 'z'],
   }
   let list=Object.entries(s)  
- for(let i in temp){  
+ for(let i in str){  
    for(let j in list){ 
-     if(list[j][1].includes(temp[i])){  
+     if(list[j][1].includes(str[i])){  
        sum+=Number(list[j][0])  
      }
    }
  }
   return sum  
 }
-
 
 
